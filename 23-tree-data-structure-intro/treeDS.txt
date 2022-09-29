@@ -1,0 +1,14 @@
+Tree = non linear DS where nodes are organized in a hierarchy
+	ex: file explorer, DBs, DNS, HTML DOM
+
+Root node = top of the tree. No incoming edges, only outgoing (Parent)
+Leaf node = bottom of the tree. Only incoming edges, no outgoing (Child)
+Branch node = in the middle. Have both incoming and outgoing edges (Parent + child)
+
+Any two children that share the same parent, are called siblings.
+
+Subtree = smaller tree, held within a tree
+
+Tree size = # of nodes
+Depth of a node = # of edges below the root node. Root node has depth of 0.
+Height of a node = # of edges above furthest leaf node

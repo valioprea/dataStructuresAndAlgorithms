@@ -1,0 +1,32 @@
+Tree Traversal = process of visiting all the nodes of the tree.
+
+Begin at the root node and follow a certain procedure:
+- in-order
+- post-order
+- pre-order
+
+Example given: Binary Tree. Not!!!! binary search tree
+
+In-order: LEFT -> ROOT -> right
+Recursive method that will navigate a tree in order:
+private void traverseTree(Node root){
+   traverseTree(root.left);
+   System.out.println(root.data);
+   traverseTree(root.right);
+}
+
+Post-order: left-right-root
+Ex: used to delete a tree from leaf to root
+private void traverseTree(Node root){
+   traverseTree(root.left);
+   traverseTree(root.right);
+   System.out.println(root.data);
+}
+
+Pre-order: root-> left -> right
+Ex: used to make a copy of a tree
+private void traverseTree(Node root){
+   System.out.println(root.data);
+   traverseTree(root.left);
+   traverseTree(root.right);
+}

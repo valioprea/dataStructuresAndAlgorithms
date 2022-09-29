@@ -1,0 +1,22 @@
+Graph
+= nonlinear aggregation of nodes and edges
+= popular way to describe networks
+
+Node = vertex, may contain a piece of data
+Edge = connection between two nodes
+
+
+Graphs can be undirected / directed.
+
+Undirected graphs (ex: facebook connection with friends)
+
+If two nodes are connected => adjacency
+
+Dir graphs = one direction! (ex. street maps)
+=================================================
+
+DIRECTED GRAPH:
+How can we describe a graph ?
+- adjacency matrix ( runtime complexity O(1) but space complexity O(n^2)=25 spaces ) - tends to suit graphs that have many edges
+OR (
+- adjacency list (array list of linked lists) (time complexity O(n), space complexity O(n+E) where E = number of edges)
